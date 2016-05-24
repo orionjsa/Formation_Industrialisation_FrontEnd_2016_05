@@ -27,4 +27,4 @@
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.default = Contact;
 });
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=Contact.js.map

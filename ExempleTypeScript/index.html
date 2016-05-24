@@ -9,8 +9,9 @@
         <!-- besoin d'un loader pour charger les modules -->
         <script src="bower_components/requirejs/require.js"></script>
         <script>
-            require(['js/main'], function(){
-                
+            require(['js/Contact'], function(Contact){
+                var romain = new Contact.default('Romain');
+                document.body.innerHTML = romain.hello().toUpperCase();
             });
         </script>
     </body>
