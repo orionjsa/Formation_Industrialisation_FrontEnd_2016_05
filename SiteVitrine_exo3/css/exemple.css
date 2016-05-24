@@ -4,6 +4,7 @@ body,
 }
 a {
   color: #7845b2;
+  text-decoration: none;
 }
 #presentation {
   color: #ffffff;
