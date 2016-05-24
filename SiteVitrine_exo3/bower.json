@@ -1,0 +1,12 @@
+{
+  "name": "site-vitrine",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "1"
+  }
+}
