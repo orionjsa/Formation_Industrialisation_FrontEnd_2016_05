@@ -11,3 +11,8 @@ Projet de la formation qui utilise :
 Pour utiliser ce projet, lancer la commande (depuis la racine du projet)
 
     bower install
+
+
+======
+Github formateur
+https://github.com/bioub
