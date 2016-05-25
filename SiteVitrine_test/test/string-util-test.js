@@ -12,7 +12,15 @@ describe('MyString', function(){
 
     describe('another test', function () {
        it('should fail', function(){
-           expect(MyString.length('moi'), 6);
+           expect(MyString.length('moi')).toEqual(6);
        });
+    });
+
+    describe('with integer', function(){
+        it('catch Error', function(){
+            expect(function() {
+                MyString.length(42);
+            }).toThrowError('str must be a string');
+        });
     });
 });
