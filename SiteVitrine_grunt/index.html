@@ -11,7 +11,9 @@
     <title>Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
+    <!-- build:css css/app.min.css-->
     <link href="css/bootstrap-custom.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <style>
         body {
@@ -140,12 +142,16 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<!-- build:js js/app.min.js-->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
 
 <!-- Module JS -->
 <script src="jspm_packages/system.js" ></script>
 <script src="config.js"></script>
+<!-- endbuild -->
+
 <script>
     System.import('js/main');
 </script>
