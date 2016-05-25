@@ -6,8 +6,11 @@ module.exports = function(grunt){
     grunt.initConfig({
         copy: {
             build: {
-                src: 'index.html',
-                dest: 'dist/index.html'
+                files: [
+                    {expand: true, src: 'index.html', dest: 'dist'},
+                    {expand: true, src: 'js/*', dest: 'dist'},
+                    {expand: true, src: 'css/*', dest: 'dist'},
+                ]
             }
         }
     });
