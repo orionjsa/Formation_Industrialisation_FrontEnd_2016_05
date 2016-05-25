@@ -1,0 +1,14 @@
+body,
+#presentation {
+  background-color: #d87cff;
+}
+a {
+  color: #7845b2;
+  text-decoration: none;
+}
+#presentation {
+  color: #ffffff;
+}
+#presentation a {
+  color: #144552;
+}

@@ -1,0 +1,16 @@
+@couleur: #7845b2;
+
+body{
+  background-color:@couleur * 1.8;
+}
+
+a{
+  color: @couleur;
+  text-decoration: none;
+}
+
+#presentation{
+  &:extend(body);color: #ffffff;
+
+  a{color: #144552;}
+}
