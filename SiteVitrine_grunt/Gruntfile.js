@@ -16,7 +16,7 @@ module.exports = function(grunt){
             build: {
                 files: [
                     {expand: true, src: 'index.html', dest: 'dist'},
-                    {expand: true, cwd: 'bower_components/bootstrap/fonts', src: '*', dest: 'dist/fonts/'},
+                    {expand: true, cwd: 'bower_components/bootstrap', src: 'fonts/*', dest: 'dist'},
                 ]
             }
         },
@@ -24,6 +24,12 @@ module.exports = function(grunt){
         clean: {
             clean_dist: ["dist"],
             clean_tmp: [".tmp"]
+        },
+// ajoute un numero au nom de fichier pour forcer le rechargement du static, il invalide le cache
+        rev: {
+            files: {
+                src: ['dist/js/app.min.js', 'dist/css/app.min.css']
+            }
         },
     });
 
@@ -33,6 +39,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-rev');
 
     grunt.registerTask('build', [
         'clean:clean_dist',
@@ -41,6 +48,7 @@ module.exports = function(grunt){
         'concat:generated',
         'uglify:generated',
         'cssmin:generated',
+        'rev',
         'usemin',
         'clean:clean_tmp'
     ]);
