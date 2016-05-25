@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "/SiteVitrine_exo3/",
+  baseURL: "/SiteVitrine_grunt/",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
