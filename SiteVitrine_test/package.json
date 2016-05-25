@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test":"karma start"
+  },
   "jspm": {
     "dependencies": {
       "jquery": "npm:jquery@1"
